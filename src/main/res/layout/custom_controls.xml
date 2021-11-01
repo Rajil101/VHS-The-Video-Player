@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/idRLControls"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/idTVVideoTitle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_centerInParent="true">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_replay"
+            android:background="@android:color/transparent"
+            app:tint="@color/white"
+            android:id="@+id/idIBBack"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_pause"
+            android:layout_weight="1"
+            android:id="@+id/idIBPlay"
+            android:background="@android:color/transparent"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/idIBForward"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_forward"
+            android:background="@android:color/transparent"
+            app:tint="@color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="4dp"
+        android:layout_margin="1dp">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/idSeekBarProgress"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="@color/yellow"
+            android:thumb="@drawable/seekbar_thumb"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textColor="@color/white"
+            android:text="Time"
+            android:textSize="17sp"
+            android:id="@+id/idTVTime"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
