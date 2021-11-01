@@ -1,6 +1,19 @@
 # VHS-The-Video-Player
 
-**VHS** is a video player application where you can play any format of videos, you can watch short, long length video and enjoy it with our credible app.  
+**VHS** is a video player application on android Studio using Java programming language where you can play any format of videos, you can watch short, long length video and enjoy it with our credible app.  
+
+**App Icon**:-
+
+![](images/icon.jpg)
+
+**Video_List**:-
+
+![](images/video_list.jpg)
+
+**Video_Inside**:-
+
+![](images/inner_video.jpg)
+
 
 ⁕Used-
 
